@@ -1,0 +1,32 @@
+# Python
+*.pyc
+__pycache__/
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Django
+db.sqlite3
+db.sqlite3-journal
+media/
+
+# Node
+node_modules/
+frontend/build/
+
+# Environment
+.env
+.env.local
+
+# Backups
+backups/
+
+# Production secrets
+.env.production
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

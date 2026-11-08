@@ -1,0 +1,63 @@
+services:
+  db:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: copper_pot_orders
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+  app:
+    build: .
+    expose:
+      - "8000"
+    environment:
+      - DB_HOST=db
+      - DB_NAME=copper_pot_orders
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
+      - SECRET_KEY=change-me-in-production
+      - DEBUG=1
+      - ALLOWED_HOSTS=*
+      - CORS_ALLOW_ALL_ORIGINS=1
+      - SEED_DEMO=1
+      - CELERY_BROKER_URL=redis://redis:6379/0
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - media_data:/workspace/backend/media
+      - static_data:/workspace/backend/staticfiles
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./frontend/build:/usr/share/nginx/html:ro
+      - media_data:/workspace/backend/media:ro
+      - static_data:/workspace/backend/staticfiles:ro
+    depends_on:
+      - app
+volumes:
+  postgres_data:
+  media_data:
+  static_data:

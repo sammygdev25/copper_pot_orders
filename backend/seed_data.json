@@ -1,0 +1,538 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "username": "demo",
+      "email": "demo@example.com",
+      "password": "pbkdf2_sha256$1200000$xkOP6HfOOqiwZYufvZI4cy$cwEJVI1C5BjV02lz3K81R2TkxWxGr1NyR06H3oB3mPs=",
+      "first_name": "Demo",
+      "last_name": "User",
+      "is_staff": false,
+      "is_superuser": false,
+      "is_active": true,
+      "date_joined": "2024-01-02T09:00:00Z"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "username": "jmartinez",
+      "email": "j.martinez@gmail.com",
+      "password": "pbkdf2_sha256$unusable",
+      "first_name": "Jenna",
+      "last_name": "Martinez",
+      "is_staff": false,
+      "is_superuser": false,
+      "is_active": true,
+      "date_joined": "2024-01-05T11:20:00Z"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "username": "troydavis",
+      "email": "troy.davis@yahoo.com",
+      "password": "pbkdf2_sha256$unusable",
+      "first_name": "Troy",
+      "last_name": "Davis",
+      "is_staff": false,
+      "is_superuser": false,
+      "is_active": true,
+      "date_joined": "2024-01-10T14:45:00Z"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+      "username": "lindachen",
+      "email": "linda.chen@outlook.com",
+      "password": "pbkdf2_sha256$unusable",
+      "first_name": "Linda",
+      "last_name": "Chen",
+      "is_staff": false,
+      "is_superuser": false,
+      "is_active": true,
+      "date_joined": "2024-01-15T08:30:00Z"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 5,
+    "fields": {
+      "username": "marcusreed",
+      "email": "marcus.reed@gmail.com",
+      "password": "pbkdf2_sha256$unusable",
+      "first_name": "Marcus",
+      "last_name": "Reed",
+      "is_staff": false,
+      "is_superuser": false,
+      "is_active": true,
+      "date_joined": "2024-01-20T16:10:00Z"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 6,
+    "fields": {
+      "username": "chefpaolo",
+      "email": "paolo@copperpotkitchen.com",
+      "password": "pbkdf2_sha256$unusable",
+      "first_name": "Paolo",
+      "last_name": "Rossi",
+      "is_staff": true,
+      "is_superuser": false,
+      "is_active": true,
+      "date_joined": "2023-11-01T07:00:00Z"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 7,
+    "fields": {
+      "username": "frontdesk_amy",
+      "email": "amy@copperpotkitchen.com",
+      "password": "pbkdf2_sha256$unusable",
+      "first_name": "Amy",
+      "last_name": "Whitfield",
+      "is_staff": true,
+      "is_superuser": false,
+      "is_active": true,
+      "date_joined": "2023-11-05T07:30:00Z"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 8,
+    "fields": {
+      "username": "sarahkim",
+      "email": "sarah.kim@gmail.com",
+      "password": "pbkdf2_sha256$unusable",
+      "first_name": "Sarah",
+      "last_name": "Kim",
+      "is_staff": false,
+      "is_superuser": false,
+      "is_active": true,
+      "date_joined": "2024-02-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "api.category",
+    "pk": 1,
+    "fields": {
+      "name": "Appetizers",
+      "slug": "appetizers",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.category",
+    "pk": 2,
+    "fields": {
+      "name": "Soups & Salads",
+      "slug": "soups-salads",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.category",
+    "pk": 3,
+    "fields": {
+      "name": "Entrees",
+      "slug": "entrees",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.category",
+    "pk": 4,
+    "fields": {
+      "name": "Pasta",
+      "slug": "pasta",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.category",
+    "pk": 5,
+    "fields": {
+      "name": "Sandwiches",
+      "slug": "sandwiches",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.category",
+    "pk": 6,
+    "fields": {
+      "name": "Desserts",
+      "slug": "desserts",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.category",
+    "pk": 7,
+    "fields": {
+      "name": "Beverages",
+      "slug": "beverages",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.category",
+    "pk": 8,
+    "fields": {
+      "name": "Chef's Specials",
+      "slug": "chefs-specials",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.menuitem",
+    "pk": 1,
+    "fields": {
+      "name": "Crispy Calamari Fritti",
+      "description": "Lightly breaded calamari with spicy marinara and lemon aioli",
+      "price": "12.95",
+      "category": 1,
+      "image": "/img/menu_items/crispy-calamari-fritti.jpg",
+      "is_available": true,
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.menuitem",
+    "pk": 2,
+    "fields": {
+      "name": "Copper Pot Chowder",
+      "description": "Creamy clam chowder with smoked bacon and fresh thyme",
+      "price": "8.50",
+      "category": 2,
+      "image": "/img/menu_items/copper-pot-chowder.jpg",
+      "is_available": true,
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.menuitem",
+    "pk": 3,
+    "fields": {
+      "name": "Braised Short Rib",
+      "description": "Red wine braised short rib with garlic mashed potatoes",
+      "price": "27.00",
+      "category": 3,
+      "image": "/img/menu_items/braised-short-rib.jpg",
+      "is_available": true,
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.menuitem",
+    "pk": 4,
+    "fields": {
+      "name": "Wild Mushroom Tagliatelle",
+      "description": "House-made tagliatelle with wild mushrooms and truffle cream",
+      "price": "19.50",
+      "category": 4,
+      "image": "/img/menu_items/wild-mushroom-tagliatelle.jpg",
+      "is_available": true,
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.menuitem",
+    "pk": 5,
+    "fields": {
+      "name": "Roasted Turkey Club",
+      "description": "Roasted turkey, bacon, avocado and chipotle mayo on sourdough",
+      "price": "13.75",
+      "category": 5,
+      "image": "/img/menu_items/roasted-turkey-club.jpg",
+      "is_available": true,
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.menuitem",
+    "pk": 6,
+    "fields": {
+      "name": "Warm Chocolate Lava Cake",
+      "description": "Molten chocolate cake with vanilla bean ice cream",
+      "price": "9.00",
+      "category": 6,
+      "image": "/img/menu_items/warm-chocolate-lava-cake.jpg",
+      "is_available": true,
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.menuitem",
+    "pk": 7,
+    "fields": {
+      "name": "Copper Pot Signature Lemonade",
+      "description": "Fresh squeezed lemonade with a hint of rosemary",
+      "price": "4.50",
+      "category": 7,
+      "image": "/img/menu_items/copper-pot-signature-lemonade.jpg",
+      "is_available": true,
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.menuitem",
+    "pk": 8,
+    "fields": {
+      "name": "Pan-Seared Scallops Special",
+      "description": "Seared scallops over corn risotto with brown butter sauce",
+      "price": "29.95",
+      "category": 8,
+      "image": "/img/menu_items/pan-seared-scallops-special.jpg",
+      "is_available": true,
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.order",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "order_type": "pickup",
+      "status": "completed",
+      "customer_name": "Demo User",
+      "phone": "555-201-3344",
+      "address": "",
+      "total_amount": "25.45",
+      "delivery_fee": "0.00",
+      "created_at": "2024-02-10T18:20:00Z",
+      "paid_at": "2024-02-10T18:22:00Z",
+      "stripe_session_id": "cs_test_demo_001",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.order",
+    "pk": 2,
+    "fields": {
+      "user": 1,
+      "order_type": "delivery",
+      "status": "preparing",
+      "customer_name": "Demo User",
+      "phone": "555-201-3344",
+      "address": "214 Birchwood Ave, Apt 3",
+      "total_amount": "44.45",
+      "delivery_fee": "5.00",
+      "created_at": "2024-02-18T19:05:00Z",
+      "paid_at": "2024-02-18T19:07:00Z",
+      "stripe_session_id": "cs_test_demo_002",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.order",
+    "pk": 3,
+    "fields": {
+      "user": 2,
+      "order_type": "pickup",
+      "status": "ready",
+      "customer_name": "Jenna Martinez",
+      "phone": "555-402-8812",
+      "address": "",
+      "total_amount": "21.45",
+      "delivery_fee": "0.00",
+      "created_at": "2024-02-19T12:15:00Z",
+      "paid_at": "2024-02-19T12:17:00Z",
+      "stripe_session_id": "cs_test_jm_003",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.order",
+    "pk": 4,
+    "fields": {
+      "user": 3,
+      "order_type": "delivery",
+      "status": "placed",
+      "customer_name": "Troy Davis",
+      "phone": "555-677-9021",
+      "address": "88 Maple Street",
+      "total_amount": "32.00",
+      "delivery_fee": "5.00",
+      "created_at": "2024-02-20T17:40:00Z",
+      "paid_at": "2024-02-20T17:42:00Z",
+      "stripe_session_id": "cs_test_td_004",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.order",
+    "pk": 5,
+    "fields": {
+      "user": 4,
+      "order_type": "pickup",
+      "status": "completed",
+      "customer_name": "Linda Chen",
+      "phone": "555-312-7765",
+      "address": "",
+      "total_amount": "16.50",
+      "delivery_fee": "0.00",
+      "created_at": "2024-02-21T13:00:00Z",
+      "paid_at": "2024-02-21T13:03:00Z",
+      "stripe_session_id": "cs_test_lc_005",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.order",
+    "pk": 6,
+    "fields": {
+      "user": 5,
+      "order_type": "delivery",
+      "status": "completed",
+      "customer_name": "Marcus Reed",
+      "phone": "555-889-4432",
+      "address": "501 Riverside Dr, Unit 12",
+      "total_amount": "38.95",
+      "delivery_fee": "5.00",
+      "created_at": "2024-02-22T20:10:00Z",
+      "paid_at": "2024-02-22T20:12:00Z",
+      "stripe_session_id": "cs_test_mr_006",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.order",
+    "pk": 7,
+    "fields": {
+      "user": 8,
+      "order_type": "pickup",
+      "status": "preparing",
+      "customer_name": "Sarah Kim",
+      "phone": "555-220-6690",
+      "address": "",
+      "total_amount": "29.95",
+      "delivery_fee": "0.00",
+      "created_at": "2024-02-23T11:30:00Z",
+      "paid_at": "2024-02-23T11:32:00Z",
+      "stripe_session_id": "cs_test_sk_007",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.order",
+    "pk": 8,
+    "fields": {
+      "user": 1,
+      "order_type": "pickup",
+      "status": "placed",
+      "customer_name": "Demo User",
+      "phone": "555-201-3344",
+      "address": "",
+      "total_amount": "12.95",
+      "delivery_fee": "0.00",
+      "created_at": "2024-02-24T15:45:00Z",
+      "paid_at": null,
+      "stripe_session_id": null,
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.orderitem",
+    "pk": 1,
+    "fields": {
+      "order": 1,
+      "menu_item": 1,
+      "quantity": 1,
+      "price": "12.95",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.orderitem",
+    "pk": 2,
+    "fields": {
+      "order": 1,
+      "menu_item": 7,
+      "quantity": 1,
+      "price": "4.50",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.orderitem",
+    "pk": 3,
+    "fields": {
+      "order": 1,
+      "menu_item": 2,
+      "quantity": 1,
+      "price": "8.50",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.orderitem",
+    "pk": 4,
+    "fields": {
+      "order": 2,
+      "menu_item": 3,
+      "quantity": 1,
+      "price": "27.00",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.orderitem",
+    "pk": 5,
+    "fields": {
+      "order": 2,
+      "menu_item": 6,
+      "quantity": 1,
+      "price": "9.00",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.orderitem",
+    "pk": 6,
+    "fields": {
+      "order": 2,
+      "menu_item": 7,
+      "quantity": 1,
+      "price": "4.50",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.orderitem",
+    "pk": 7,
+    "fields": {
+      "order": 3,
+      "menu_item": 4,
+      "quantity": 1,
+      "price": "19.50",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "api.orderitem",
+    "pk": 8,
+    "fields": {
+      "order": 8,
+      "menu_item": 1,
+      "quantity": 1,
+      "price": "12.95",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  }
+]

@@ -1,0 +1,14 @@
+Pillow>=10.0
+celery>=5.3
+channels-redis>=4.0
+channels>=4.0
+daphne>=4.0
+django-cors-headers>=4.3
+django-filter>=23.3
+django>=4.2,<5.1
+djangorestframework>=3.14
+gunicorn>=21.2
+httpx>=0.27
+psycopg2-binary>=2.9
+redis>=5.0
+stripe>=12.0,<17.0
